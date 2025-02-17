@@ -11,19 +11,19 @@ import App008ViewModel
 
 final class SettingsRouter: BaseRouter {
     static func showPrivacyViewController(in navigationController: UINavigationController) {
-//        let viewController = ViewControllerFactory.makePrivacyViewController()
-//        viewController.navigationItem.hidesBackButton = false
-//        navigationController.navigationBar.isHidden = false
-//        viewController.hidesBottomBarWhenPushed = true
-//        navigationController.pushViewController(viewController, animated: true)
+        let viewController = ViewControllerFactory.makePrivacyViewController()
+        viewController.navigationItem.hidesBackButton = false
+        navigationController.navigationBar.isHidden = false
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(viewController, animated: true)
     }
 
     static func showTermsViewController(in navigationController: UINavigationController) {
-//        let viewController = ViewControllerFactory.makeTermsViewController()
-//        viewController.navigationItem.hidesBackButton = false
-//        navigationController.navigationBar.isHidden = false
-//        viewController.hidesBottomBarWhenPushed = true
-//        navigationController.pushViewController(viewController, animated: true)
+        let viewController = ViewControllerFactory.makeTermsViewController()
+        viewController.navigationItem.hidesBackButton = false
+        navigationController.navigationBar.isHidden = false
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController.pushViewController(viewController, animated: true)
     }
 
     static func showAboutViewController(in navigationController: UINavigationController) {

@@ -44,17 +44,17 @@ final class ViewControllerFactory {
         viewController.viewModel = assembler.resolver.resolve(IAboutViewModel.self)
         return viewController
     }
-//
-//    //MARK: PrivacyPolicy
-//    static func makePrivacyViewController() -> PrivacyViewController {
-//        let viewController = PrivacyViewController()
-//        return viewController
-//    }
-//
-//    //MARK: Terms
-//    static func makeTermsViewController() -> TermsViewController {
-//        let viewController = TermsViewController()
-//        return viewController
-//    }
+
+    //MARK: PrivacyPolicy
+    static func makePrivacyViewController() -> PrivacyViewController {
+        let viewController = PrivacyViewController()
+        return viewController
+    }
+
+    //MARK: Terms
+    static func makeTermsViewController() -> TermsViewController {
+        let viewController = TermsViewController()
+        return viewController
+    }
 
 }

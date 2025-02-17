@@ -124,7 +124,6 @@ extension HomeViewController {
         containerView.addSubview(leftImageView)
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: containerView)
-        self.navigationController?.navigationBar.backgroundColor = UIColor(hex: "#0D0D0D")
     }
 
     private func setHeaderAttributedText() {
