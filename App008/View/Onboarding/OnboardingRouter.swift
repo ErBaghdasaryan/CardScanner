@@ -11,9 +11,9 @@ import App008ViewModel
 
 final class OnboardingRouter: BaseRouter {
     static func showHomeViewController(in navigationController: UINavigationController) {
-//        let viewController = ViewControllerFactory.makeTabBarViewController()
-//        viewController.navigationItem.hidesBackButton = true
-//        navigationController.navigationBar.isHidden = true
-//        navigationController.pushViewController(viewController, animated: true)
+        let viewController = ViewControllerFactory.makeHomeViewController()
+        viewController.navigationItem.hidesBackButton = true
+        navigationController.navigationBar.isHidden = false
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

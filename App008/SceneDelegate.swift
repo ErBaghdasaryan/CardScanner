@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
         let viewController: UIViewController?
         if appStorageService.hasData(for: .skipOnboarding) {
-            viewController = ViewControllerFactory.makeOnboardingViewController()
+            viewController = ViewControllerFactory.makeHomeViewController()
         } else {
             appStorageService.saveData(key: .skipOnboarding, value: true)
             viewController = ViewControllerFactory.makeOnboardingViewController()

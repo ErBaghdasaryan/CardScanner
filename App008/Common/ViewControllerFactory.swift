@@ -21,41 +21,29 @@ final class ViewControllerFactory {
         return viewController
     }
 
-//    //MARK: - TabBar
-//    static func makeTabBarViewController() -> TabBarViewController {
-//        let viewController = TabBarViewController()
-//        return viewController
-//    }
-//
-//    //MARK: Screensaver
-//    static func makeScreensaverViewController() -> ScreensaverViewController {
-//        let assembler = Assembler(commonAssemblies + [ScreensaverAssembly()])
-//        let viewController = ScreensaverViewController()
-//        viewController.viewModel = assembler.resolver.resolve(IScreensaverViewModel.self)
-//        return viewController
-//    }
-//
-//    //MARK: Download
-//    static func makeDownloadViewController(navigationModel: DownloadNavigationModel) -> DownloadViewController {
-//        let assembler = Assembler(commonAssemblies + [DownloadAssembly()])
-//        let viewController = DownloadViewController()
-//        viewController.viewModel = assembler.resolver.resolve(IDownloadViewModel.self, argument: navigationModel)
-//        return viewController
-//    }
-//
-//    //MARK: Settings
-//    static func makeSettingsViewController() -> SettingsViewController {
-//        let assembler = Assembler(commonAssemblies + [SettingsAssembly()])
-//        let viewController = SettingsViewController()
-//        viewController.viewModel = assembler.resolver.resolve(ISettingsViewModel.self)
-//        return viewController
-//    }
-//
-//    //MARK: About
-//    static func makeAboutViewController() -> AboutViewController {
-//        let viewController = AboutViewController()
-//        return viewController
-//    }
+    //MARK: Home
+    static func makeHomeViewController() -> HomeViewController {
+        let assembler = Assembler(commonAssemblies + [HomeAssembly()])
+        let viewController = HomeViewController()
+        viewController.viewModel = assembler.resolver.resolve(IHomeViewModel.self)
+        return viewController
+    }
+
+    //MARK: Settings
+    static func makeSettingsViewController() -> SettingsViewController {
+        let assembler = Assembler(commonAssemblies + [SettingsAssembly()])
+        let viewController = SettingsViewController()
+        viewController.viewModel = assembler.resolver.resolve(ISettingsViewModel.self)
+        return viewController
+    }
+
+    //MARK: About
+    static func makeAboutViewController() -> AboutViewController {
+        let assembler = Assembler(commonAssemblies + [AboutAssembly()])
+        let viewController = AboutViewController()
+        viewController.viewModel = assembler.resolver.resolve(IAboutViewModel.self)
+        return viewController
+    }
 //
 //    //MARK: PrivacyPolicy
 //    static func makePrivacyViewController() -> PrivacyViewController {

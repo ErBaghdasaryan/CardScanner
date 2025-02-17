@@ -11,7 +11,8 @@ import App008ViewModel
 
 class BaseRouter {
 
-    class func popViewController(in navigationController: UINavigationController) {
+    class func popViewController(in navigationController: UINavigationController, completion: (() -> Void)? = nil) {
+        completion?()
         navigationController.popViewController(animated: true)
     }
 }
